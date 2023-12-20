@@ -1,0 +1,191 @@
+body {
+    font-family: 'gruppo', sans-serif;
+    background-color: #dadbdd;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#banner {
+    background-image: url('IMG_5348.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    min-height: 50vh; /* Use min-height instead of height */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-bottom: 5px solid #fff;
+    box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.75);
+}
+
+#banner-content {
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+h1 {
+    color: #fff; /* White text color */
+text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Adding a subtle shadow */
+font-weight: bold; /* Making the text bold */
+margin-right: 10px; 
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #4c95af;
+    border: 1px solid #4c95af;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+    padding: 10px 20px;
+}
+
+.profile-image {
+    width: 68px; /* Adjust the size as needed */
+    height: 70px;
+    border-radius: 50%; /* Make it circular */
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+a:hover {
+    background-color: #3e7c92;
+}
+
+#intro {
+    text-align: center;
+    margin-top: 20px; /* Add margin to separate from banner */
+}
+#footer {
+    background-color: #333; /* Choose a background color for the footer */
+    color: #fff; /* Text color for the footer */
+    padding: 20px;
+    text-align: center;
+}
+
+#footer a {
+    display: inline-block;
+    margin: 0 10px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+#footer img {
+    border-radius: 20%;
+    width: 30px; /* Adjust the width of the images as needed */
+    height: 30px; /* Adjust the height of the images as needed */
+}
+
+/*resume specific*/
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.left-section {
+    width: 25%;
+}
+
+.right-section {
+    width: 74%; /* Adjusted to give a little space for the border */
+}
+
+
+
+.left-section {
+    width: 25%;
+}
+
+.right-section {
+    width: 74%; /* Adjusted to give a little space for the border */
+}
+
+h1 {
+    color: #eae8e8;
+}
+
+h2 {
+    color: #4c95af;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.education,
+.experience {
+    margin-bottom: 20px;
+}
+
+.skills {
+    margin-bottom: 20px;
+}
+
+.bordered-section {
+    border-left: 2px solid #ccc; /* Border between left and right sections */
+    padding-left: 20px; /* Space for better aesthetics */
+}
+
+/*contact page stuff*/
+
+form {
+    width: 300px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 40px; /* Add margin to the bottom of the form */
+    position: relative; /* Add relative positioning */
+    z-index: 1; /* Set a higher z-index to appear above the footer */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4c95af;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e7c92;
+}
