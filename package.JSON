@@ -1,0 +1,16 @@
+{
+    "name": "personal page",
+    "version": "1.0.0",
+    "description": "personal page",
+    "main": "website/script.js",
+    "scripts": {
+        "start": "node website/script.js"
+    },
+    "dependencies": {
+        "ejs": "^3.1.9",
+        "express": "^4.17.1",
+        "http": "^0.0.1-security",
+        "nodemailer": "^6.9.7",
+        "nodemon": "^3.0.1"
+    }
+}
