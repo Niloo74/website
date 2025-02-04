@@ -1,15 +1,27 @@
-body {
-    font-family: 'gruppo', sans-serif;
-    background-color: #dadbdd;
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    height: 100vh;
+/* Ensure full-page coverage */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
-    position: relative;
-    width:100%;
+    width: 100%;
+    font-family: 'gruppo', sans-serif;
+    background-color: #dadbdd;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
+/* Ensure content fills remaining space */
+main {
+    flex: 1; /* Makes main content take up remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content */
+    align-items: center;
+    max-width: 100vw;
+}
+
+/* Banner Section */
 #banner {
     background-image: url('IMG_5348.jpg');
     background-size: cover;
@@ -19,8 +31,8 @@ body {
     text-align: center;
     position: relative;
     width: 100%;
-    min-height: 50vh; /* Use min-height instead of height */
-    max-height:50vh;
+    min-height: 30vh; /* Ensures banner isn't too large */
+    max-height: 50vh; /* Prevents it from taking too much space */
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -30,16 +42,18 @@ body {
 
 #banner-content {
     display: flex;
-    align-items: center; /* Center items vertically */
+    align-items: center; /* Centers items vertically */
 }
 
+/* Header Styles */
 h1 {
-    color: #fff; /* White text color */
-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Adding a subtle shadow */
-font-weight: bold; /* Making the text bold */
-margin-right: 10px; 
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    margin-right: 10px; 
 }
 
+/* Links (Buttons) */
 a {
     color: #fff;
     text-decoration: none;
@@ -52,27 +66,33 @@ a {
     padding: 10px 20px;
 }
 
-.profile-image {
-    width: 68px; /* Adjust the size as needed */
-    height: 70px;
-    border-radius: 50%; /* Make it circular */
-    overflow: hidden;
-    margin-right: 10px;
-}
-
 a:hover {
     background-color: #3e7c92;
 }
 
+/* Profile Image */
+.profile-image {
+    width: 68px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+/* Introduction Section */
 #intro {
     text-align: center;
-    margin-top: 20px; /* Add margin to separate from banner */
+    margin-top: 20px;
 }
+
+/* Footer */
 #footer {
-    background-color: #333; /* Choose a background color for the footer */
-    color: #fff; /* Text color for the footer */
-    padding: 20px;
+    width: 100%;
     text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: auto; /* Pushes footer to the bottom */
 }
 
 #footer a {
@@ -84,12 +104,11 @@ a:hover {
 
 #footer img {
     border-radius: 20%;
-    width: 30px; /* Adjust the width of the images as needed */
-    height: 30px; /* Adjust the height of the images as needed */
+    width: 30px;
+    height: 30px;
 }
 
-/*resume specific*/
-
+/* Resume Page Styling */
 main {
     max-width: 800px;
     margin: 20px auto;
@@ -98,28 +117,15 @@ main {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Stack elements vertically */
 }
 
-
-.left-section {
-    width: 25%;
+/* Adjust sections to fit full width */
+.left-section, .right-section {
+    width: 100%;
 }
 
-.right-section {
-    width: 74%; /* Adjusted to give a little space for the border */
-}
-
-
-
-.left-section {
-    width: 25%;
-}
-
-.right-section {
-    width: 74%; /* Adjusted to give a little space for the border */
-}
-
+/* Headings */
 h1 {
     color: #eae8e8;
 }
@@ -128,6 +134,7 @@ h2 {
     color: #4c95af;
 }
 
+/* Lists */
 ul {
     list-style-type: none;
     padding: 0;
@@ -137,22 +144,20 @@ li {
     margin-bottom: 8px;
 }
 
+/* Sections */
 .education,
-.experience {
-    margin-bottom: 20px;
-}
-
+.experience,
 .skills {
     margin-bottom: 20px;
 }
 
+/* Resume Page Borders */
 .bordered-section {
-    border-left: 2px solid #ccc; /* Border between left and right sections */
-    padding-left: 20px; /* Space for better aesthetics */
+    border-left: 2px solid #ccc;
+    padding-left: 20px;
 }
 
-/*contact page stuff*/
-
+/* Contact Page */
 form {
     width: 300px;
     padding: 15px;
@@ -161,9 +166,9 @@ form {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-bottom: 40px; /* Add margin to the bottom of the form */
-    position: relative; /* Add relative positioning */
-    z-index: 1; /* Set a higher z-index to appear above the footer */
+    margin-bottom: 40px; /* Extra spacing */
+    position: relative;
+    z-index: 1;
 }
 
 label {
@@ -171,6 +176,7 @@ label {
     margin-bottom: 10px;
 }
 
+/* Input Fields */
 input,
 textarea {
     width: 100%;
@@ -179,6 +185,7 @@ textarea {
     box-sizing: border-box;
 }
 
+/* Button Styling */
 button {
     background-color: #4c95af;
     color: #fff;
