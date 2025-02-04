@@ -2,35 +2,35 @@
 <html lang="en">
 
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9TCBM6L82Q"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-9TCBM6L82Q');
-</script>
     <meta charset="utf-8" />
-    <title>Recent</title>
+    <title>Recent Projects</title>
     <link rel="stylesheet" href="style.css">
-
-<link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
-<style>
-    #intro{
-       flex-direction: column;
-       text-align: left;
-       margin-left: 5%;
-    }
-    .desc{
-        margin-left: 1%;
-    }
-</style>
-
+    
+    <style>
+        #intro {
+            flex-direction: column;
+            text-align: left;
+            margin-left: 5%;
+        }
+        .desc {
+            margin-left: 2%;
+            font-style: italic;
+            color: #555;
+        }
+        h2 a {
+            text-decoration: none;
+            color: #dce4d2;
+        }
+        h2 a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
+
 <body>
     <div id="banner">
         <div id="banner-content">
@@ -40,51 +40,113 @@
             <a href="/resume">Resume</a>
             <a href="/contact">Contact</a>
             <a href="/about">About</a>
-
             <a href="/recent">Recent Projects</a>
             <a href="/blog">Blog</a>
-            
         </div>
     </div>
 
     <div id="intro">   
-    <h2> <a href="https://github.com/Niloo74/project-6-Niloo74-main">Lambda Calculus interpreter(Ocaml)</a></h2><br> 
-    <h2> <a href="https://github.com/Niloo74/NFA--DFA-Python-">NFA -> DFA converter (Python)</a></h2><br> 
-    <h2> <a href="https://github.com/Niloo74/NFA--DFA-Ocaml-">NFA -> DFA converter (Ocaml) </a></h2><br>   
-    <h2> <a href="https://github.com/acastillo0407/CMSC335Final">Weather API (JavaScript)<br></a></h2><br>
-    <h2> <a href="https://github.com/Niloo74/website">Personal Website (JavaScript)</a></h2><br>
-    <h2> <a href="https://github.com/Niloo74/Woof/tree/main">Woof I'm Hungry click adventure game (C#)</a></h2><br>
+        <h1>Recent Projects</h1>
 
+        <h2><a href="https://github.com/Niloo74/buffer-overflow">Buffer Overflow Exploit</a></h2>
+        <div class="desc">Designed a targeted input to interact with a vulnerable UDP-based server, carefully analyzing its
+             memory behavior to craft a structured response that influenced program execution. By studying how the server processed 
+             incoming messages, I identified a way to control key memory values and adjusted the payload accordingly. The final 
+             implementation demonstrated how precise input manipulation could lead to an unintended execution path, reinforcing 
+             the importance of secure memory management in networked applications.</div>
 
-    
-    <h1>Data Structures</h1>
-    <h2> <a href="urlShort">Morse Coder Translator (Java) <br></a></h2><div class="desc">Trees</div>
-    <h2> <a href="https://github.com/Niloo74/Elephant-links">Linked Elephants (C) <br></a></h2><div class="desc">Linked lists</div>
-    <h2> <a href="https://github.com/Niloo74/StringGraph">String Graph (C)<br></a></h2><div class="desc">Linked List</div>
-    
+        <h2><a href="https://github.com/Niloo74/community-exchange-platform">Community Exchange Platform (Python, Flask)</a></h2>
+        <div class="desc"> •Built a simulated web app for redistributing reusable packing
+            materials, aimed at reducing waste.
+            <br>• Designed and implemented relational database schemas in
+            PostgreSQL to manage inventory, orders, and customer
+            information, ensuring seamless operations and data integrity.
+            <br>• Developed back-end functionality with Flask, including order
+            placement/management/tracking, and inventory updates.
+            <br>• Created responsive and intuitive front-end interfaces using
+            Bootstrap with features like category filters, low-stock alerts,
+            and detailed order tracking.</div>
+
+        <h2><a href="https://github.com/Niloo74/FMINDEXGENOMEQUERYTOOL">FM Index Genome Query Tool (Java)</a></h2>
+        <div class="desc">Developed a genome indexing tool by building essential data
+            structures suffix array, FM-index, Burrows-Wheeler Transform
+            (BWT), to enable rapid exact and partial sequence matching
+            on large DNA datasets. Utilized backward search with
+            optimized data handling for efficient, structured output in
+            JSON, supporting complex bioinformatics analysis</div>
+
+        <h2><a href="https://github.com/Niloo74/DAFNYLANGUAGESIMULATOR">Dafny Language Simulator (Haskell)</a></h2>
+        <div class="desc">Enabled complete Dafny program verification by implementing
+            a Dafny language simulator supporting all language constructs,
+            by developing a comprehensive system including parser,
+            printer, evaluator, and Z3 SMT solver integration</div>
+
+       
+        <h2><a href="https://github.com/Niloo74/Leitner-System">Leitner Flashcard System (Python, Flask)</a></h2>
+        <div class="desc">Remade the German 5-box memorization algorithm using Flask and Python.</div>
+       
+        <h2><a href="https://github.com/Niloo74/project-6-Niloo74-main">Lambda Calculus Interpreter (Ocaml)</a></h2>
+        <div class="desc">Created a lexer, top-down parser, evaluator, and compiler for lambda calculus expressions.</div>
+
+        <h2><a href="https://github.com/Niloo74/NFA--DFA-Python-">NFA → DFA Converter (Python)</a></h2>
+        <div class="desc">Developed a tool to convert nondeterministic finite automata to deterministic finite automata.</div>
+
+        <h2><a href="https://github.com/Niloo74/NFA--DFA-Ocaml-">NFA → DFA Converter (Ocaml)</a></h2>
+        <div class="desc">Implemented finite automata conversion in Ocaml.</div>
+
+        <h2><a href="https://github.com/acastillo0407/CMSC335Final">Weather API (JavaScript)</a></h2>
+        <div class="desc">Created a JavaScript web app that retrieves weather data using an external API.</div>
+
+        <h2><a href="https://github.com/Niloo74/website">Personal Website (JavaScript)</a></h2>
+        <div class="desc">Designed and implemented my personal website.</div>
+
+        <h2><a href="https://github.com/Niloo74/Woof/tree/main">Woof I'm Hungry Click Adventure Game (C#)</a></h2>
+        <div class="desc">Developed a Unity-based click adventure game.</div>
+
+        <h1>Data Structures Projects</h1>
+
+        <h2><a href="https://github.com/Niloo74/KDTREES">KD Trees (Python)</a></h2>
+        <div class="desc">Optimized spatial search for k-dimensional datasets by
+            reducing search time, through implementing a dynamic k-d
+            structure with splitting, parameterized leaf node capacity, and
+            bounding-box based k-nearest neighbor.</div>
+
+        <h2><a href="https://github.com/Niloo74/Morse-Code-Translator">Morse Code Translator (Java)</a></h2>
+        <div class="desc">Implemented a tree-based Morse code encoder and decoder.</div>
+
+        <h2><a href="https://github.com/Niloo74/Elephant-links">Linked Elephants (C)</a></h2>
+        <div class="desc">Created a linked list-based memory management system.</div>
+
+        <h2><a href="https://github.com/Niloo74/StringGraph">String Graph (C)</a></h2>
+        <div class="desc">Developed a graph-based data structure using linked lists.</div>
+
+        
+
+        <h2><a href="https://github.com/Niloo74/Graph-Data">Graph Data Structure (Python)</a></h2>
+        <div class="desc">Developed a graph data structure and implemented Kruskal's algorithm for minimum spanning trees.</div>
+
+        <h2><a href="https://github.com/Niloo74/Tries-Data">Tries Data Structure (Python)</a></h2>
+        <div class="desc">Built a Trie object with insert, delete, merge, and search functionalities.</div>
+
+        <h2><a href="https://github.com/Niloo74/Splay-Trees">Splay Tree (Python)</a></h2>
+        <div class="desc">Implemented splay trees with various balancing operations (zig, zig-zig, zig-zag), along with find-min, delete, and search functions.</div>
+
     </div>
-<br>
 
-</div>
+    <br>
 
-
-
-
-
-
-        <div id="footer">
-            Lets keep in touch!<br><br>
-            <a href="https://www.linkedin.com/in/niloufar-zafari-979724291" target="_blank">
-                <img src="LI-In-Bug.png" alt="LinkedIn">
-            </a>
-            <a href="https://github.com/Niloo74" target="_blank">
-                <img src="github-mark.png" alt="GitHub">
-            </a>
-            <a href="https://www.instagram.com/lily_zaf1" target="_blank">
-                <img src="Instagram_Glyph_Black.png" alt="Instagram">
-            </a>
-            
-        </div>
-    </body>
+    <div id="footer">
+        <p>Let's keep in touch!</p>
+        <a href="https://www.linkedin.com/in/niloufar-zafari-979724291" target="_blank">
+            <img src="LI-In-Bug.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/Niloo74" target="_blank">
+            <img src="github-mark.png" alt="GitHub">
+        </a>
+        <a href="https://www.instagram.com/lily_zaf1/" target="_blank">
+            <img src="Instagram_Glyph_Black.png" alt="Instagram">
+        </a>
+    </div>
+</body>
 
 </html>

@@ -2,40 +2,57 @@
 <html lang="en">
 
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9TCBM6L82Q"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-9TCBM6L82Q');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <title>Your Name - Resume</title>
+    <title>Niloufar Zafari - Resume</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
-
 </head>
 
 <style>
-    
-    #heads{
+    #heads {
         text-align: center;
         color: #333;
     }
 
+    .resume-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    .left-column, .right-column {
+        width: 45%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .left-column {
+        border-right: 2px solid #ccc;
+    }
+
+    h2 {
+        color: #444;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    ul li {
+        margin-bottom: 8px;
+    }
 </style>
 
 <body>
     <div id="banner">
         <div id="banner-content">
-            <h1>Nilou Zafari</h1>
-            <img src="Screenshot 2023-12-18 224031.png" alt="image" class="profile-image">
+            <h1>Niloufar Zafari</h1>
             <a href="/">Home</a>
             <a href="/resume">Resume</a>
             <a href="/contact">Contact</a>
@@ -44,118 +61,141 @@
             <a href="/blog">Blog</a>
         </div>
     </div>
-<h1 id="heads">Resume</h1>
-    <main>
-        <div class="left-section">
-            <div class="bordered-section">
-                <h2>Soft Skills</h2>
-                <ul>
- <li>Fluency in written and spoken Farsi</li>
-                    <li>Communication</li>
-                    <li>Teamwork</li>
-                    <li>Problem-solving</li>
-                    <li>Adaptability</li>
-                </ul>
-            </div>
-            <div class="bordered-section">
-                <h2>Technical Skills</h2>
-                <ul>
-                    <li>Java</li>
-                     <li>Dafny</li>
-                     <li>Haskell</li>
-                    <li>Python</li>
-                    <li>Rust</li>
-                    <li>Ocaml</li>
-                    <li>C</li>
-                    <li>HTML5</li>
-                    <li>CSS</li>
-                    <li>PHP</li>
-                    <li>JavaScript</li>
-                    <li>MATLAB </li>
-                    
-                    <!-- Add more technical skills as needed -->
-                </ul>
-            </div>
+
+    <h1 id="heads">Resume</h1>
+
+    <div class="resume-section">
+        <div class="left-column">
+            <h2>Experience</h2>
+            <strong>Xu String | Intern</strong> <br>
+            <em>June 2024 – Sep 2024 | Rockville, MD</em>
+            <ul>
+                <li>Identified and resolved administrative errors in the internal systems.</li>
+                <li>Troubleshot and fixed bugs in the scheduling platform.</li>
+                <li>Enhanced daily operations by automating routine tasks.</li>
+            </ul>
+
+            <strong>Budget Referee | Intern</strong> <br>
+            <em>Dec 2023 – May 2024 | Richmond, VA</em>
+            <ul>
+                <li>Collaborated with the development team to design, develop, test, and maintain software applications.</li>
+                <li>Assisted in troubleshooting and debugging issues within existing software systems.</li>
+                <li>Participated in code reviews to improve performance, such as Automated chat.</li>
+                <li>Ensured project milestones were met on time through effective communication.</li>
+            </ul>
+
+            <h2>Projects</h2>
+            <strong>
+                <a href="https://github.com/Niloo74/reuse_app" 
+                   target="_blank" 
+                   title="Private repository – Access available upon request">
+                    Community Exchange Platform (Python, Flask) 
+                </a>
+                <br> (🔒 Access Upon Request)
+            </strong>
             
-            <div class="bordered-section">
-                <h2>Tools</h2>
-                <ul>
-                    <li>Eclipse </li>
-                    <li> Visual Studios</li>
-                    <li>Unity</li>
-                    <li> Emacs</li>
-                    <li>Junit</li>
-                    <li>XAMPP</li>
-                    <li>Node JS</li>
-                   
-                    <li>MongoDB</li>
-                    <li>APIs</li>
-                    
-                    <!-- Add more technical skills as needed -->
-                </ul>
-            </div>
-            <div class="bordered-section">
-                <h2>Education</h2>
-                <ul>
-                    <li><strong>University of Maryland College Park</strong>, Computer Science, Graduation Date: Fall 2023</li>
-                </ul>
-            </div>
+                        <ul>
+                <li>Built a simulated web app for redistributing reusable packing materials to reduce waste.</li>
+                <li>Designed and implemented relational database schemas in PostgreSQL.</li>
+                <li>Developed back-end functionality with Flask, including order placement and inventory updates.</li>
+            </ul>
+
+            <strong> <a href="" target="_blank"
+                title="Private repository - Access available upon request"> Index Genome Query Tool (Java)
+                </a>
+                <br>(🔒 Access Upon Request)
+            
+            </strong>
+            <ul>
+                <li>Developed a genome indexing tool using suffix array, FM-index, and Burrows-Wheeler Transform (BWT).</li>
+                <li>Implemented efficient backward search for large DNA datasets.</li>
+            </ul>
+            <strong> <a href="https://github.com/Niloo74/Mini-Dafny" target="_blank"
+                title="Private repository - Access available upon request"> Dafny Language Simulator (Haskell)
+                </a>
+                <br>(🔒 Access Upon Request)
+            
+            </strong>
+           
+            <ul>
+                <li>Developed a full Dafny language simulator, including parser, printer, evaluator, and Z3 SMT solver integration.</li>
+            </ul>
+
+
+            <strong> <a href="https://github.com/Niloo74/KD-Trees" target="_blank"
+                title="Private repository - Access available upon request"> KD Trees (Python)
+                </a>
+                <br>(🔒 Access Upon Request)
+            
+            </strong>
+            
+            <ul>
+                <li>Optimized spatial search for k-dimensional datasets using a dynamic k-d structure.</li>
+            </ul>
         </div>
 
-        <div class="right-section">
-            <section class="projects">
-                  <h2>Experience</h2>
-                   <li><strong>Computer Science Intern </strong>, Budget Referee, Dec2023 - Present</li>
-                    <li> Collaborated with the development team to design, develop, test, and maintain software applications.</li>
-<li>· Assisted in troubleshooting and debugging issues within existing software systems.</li>
-<li>· Participated in code reviews and provided feedback to improve code quality and maintainability such as Automated 
-chat and CSV extraction algorithms.</li>
-<li>· Communicated effectively with team members to ensure project milestones were met on time.</li>
-<li>· Demonstrated flexibility and adaptability by taking on additional responsibilities as needed in a fast-paced 
-environment.</li>
-                <h2>Projects</h2>
-                <ul>
-                    <li><strong>Lambda Calculus interpreter</strong>, Ocaml</li>
-                    <li> 
-                        created and implemented a lexer, top down parser, evaluator, and  compiler 
-                        for lambda calculus expressions.                    
-                    </section>
-                        <ul><br>
-                    <li><strong>MIPS assembly</strong></li>
-                    <li>
-                        Created a MIPS assembly simulator. (c)</li><br>
-                    <li><strong>Morse Code translator</strong>, Java</li>
-                    <li>
-                        Created a program to encode and decode Morse Code sequences using tree
-                        data  structures.</li><br>
-                    <li><strong>NFAs</strong>, Ocaml</li>
-                    <li>
-                        Created  a program to create Nondeterministic Finite Automata, convert  
-                        Nondeterministic Finite Automata to Deterministic Finite Automata, and
-                        create Finite Automata for corresponding Regular Expressions.</li><br>
-                    <li><strong>Woof I’m Hungry click adventure game</strong> </li>
-                    <li>
-                        Created a click adventure game using C# and Unity 2d</li>
-                        </ul>
-             </section>
-                </div>
-            </main>
-        
-            <footer>
-                <div id="footer">
-                    Lets keep in touch!<br><br>
-                    <a href="https://www.linkedin.com/in/niloufar-zafari-979724291" target="_blank">
-                        <img src="LI-In-Bug.png" alt="LinkedIn">
-                    </a>
-                    <a href="https://github.com/Niloo74" target="_blank">
-                        <img src="github-mark.png" alt="GitHub">
-                    </a>
-                    <a href="https://www.instagram.com/lily_zaf1/" target="_blank">
-                        <img src="Instagram_Glyph_Black.png" alt="Instagram">
-                    </a>
-                    
-                </div>
-             </footer>
-        </body>
-        
-        </html>
+        <div class="right-column">
+            <h2>Education</h2>
+            <strong>University of Maryland, College Park</strong> <br>
+            <em>Bachelor of Science in Computer Science with a concentration in Family Science</em><br>
+            <em>Graduation: Dec 2024 | Major GPA: 3.00</em>
+
+            <h2>Skills</h2>
+            <strong>Technical Skills</strong>
+            <ul>
+                <li>Encryption & Vulnerability Analysis</li>
+                <li>Secure Coding Practices</li>
+                <li>Unit and Integration Testing (JUnit, Selenium, pytest)</li>
+                <li>Indexing and Query Optimization Techniques</li>
+            </ul>
+
+            <strong>Programming Languages</strong>
+            <ul>
+                <li>Python, C, OCaml, PHP, JavaScript, Java</li>
+                <li>Rust, MATLAB, SQL, R</li>
+            </ul>
+
+            <strong>Technology & Tools</strong>
+            <ul>
+                <li>Git/GitHub, AWS, UNIX, PowerShell, APIs, Apache</li>
+                <li>MongoDB, Azure, Microsoft 365, Jira</li>
+            </ul>
+
+            <h2>Coursework</h2>
+            <ul>
+                <li>Artificial Intelligence</li>
+                <li>Network Security</li>
+                <li>Advanced Data Structures</li>
+                <li>Bioinformatics</li>
+                <li>Human-Computer Interaction</li>
+                <li>Programming Language Technologies and Paradigms</li>
+            </ul>
+
+            <h2>Soft Skills</h2>
+            <ul>
+                <li>Fluent in Farsi</li>
+                <li>Clear communicator with technical and non-technical audiences</li>
+                <li>Adaptability and problem-solving</li>
+                <li>8 years of customer service experience</li>
+                <li>3+ years of teamwork and collaboration</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer">
+            Let's keep in touch! <br><br>
+            <a href="https://www.linkedin.com/in/niloufar-zafari-979724291" target="_blank">
+                <img src="LI-In-Bug.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/Niloo74" target="_blank">
+                <img src="github-mark.png" alt="GitHub">
+            </a>
+            <a href="https://www.instagram.com/lily_zaf1/" target="_blank">
+                <img src="Instagram_Glyph_Black.png" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
